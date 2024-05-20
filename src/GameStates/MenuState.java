@@ -23,7 +23,7 @@ public class MenuState extends GameState {
         this.gsm = gsm;
         try {
             bg = new Background ("/Background/bg12.jpeg", 0);
-            bg.setVector(0, 0);
+            bg.setVector(1, 1);
             titleColor = new Color(255, 130, 171);
             titleFont = new Font("Phosphate", Font.PLAIN, 40);
             font = new Font("Bradley Hand", Font.PLAIN, 20);
@@ -43,7 +43,7 @@ public class MenuState extends GameState {
         //draw title
         g.setColor(titleColor);
         g.setFont(titleFont);
-        g.drawString("Candy Crush", 93, 100);
+        g.drawString("Candy Crush", 676/2, 390/2);
 
         //draw menu options
         g.setFont(font);
@@ -58,7 +58,7 @@ public class MenuState extends GameState {
 
     private void select () {
         if (currentChoice == 0) {
-            gsm.setState(GameStateManager.LEVEL1STATE);
+            gsm.setState(GameStateManager.LEVEL);
         }
         if (currentChoice == 1) {
             gsm.setState(GameStateManager.INSTRUCTION);

@@ -8,14 +8,14 @@ public class GameStateManager {
     private Instruction instructions;
 
     public static final int MENUSTATE = 0;
-    public static final int LEVEL1STATE = 1;
+    public static final int LEVEL = 1;
     public static final int INSTRUCTION = 2;
 
     public GameStateManager() {
         gameStates = new ArrayList<GameState>();
         currentState = MENUSTATE;
         gameStates.add (new MenuState (this));
-        gameStates.add (new Level1State (this));
+        gameStates.add (new Level(this));
         gameStates.add(new Instruction (this));
     }
 
