@@ -16,9 +16,9 @@ public class Background {
 
     private double moveScale;
 
-    public Background (String s, double ms) {
+    public Background(String s, double ms) {
         try {
-            image = ImageIO.read(getClass ().getResourceAsStream(s));
+            image = ImageIO.read(getClass().getResourceAsStream(s));
             moveScale = ms; //di chuyển tỉ lệ
         }
         catch (Exception e) {

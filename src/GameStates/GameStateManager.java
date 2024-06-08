@@ -15,7 +15,7 @@ public class GameStateManager {
         gameStates = new ArrayList<GameState>();
         currentState = MENUSTATE;
         gameStates.add (new MenuState (this));
-        gameStates.add (new Level(this));
+        gameStates.add(new Level (this));
         gameStates.add(new Instruction (this));
     }
 
@@ -41,7 +41,7 @@ public class GameStateManager {
 //        gameStates.add(instructions.getInstructionPanel()); // Add instruction panel to window
 //        gameStates.revalidate(); // Revalidate window layout
 //        window.repaint(); // Repaint window to display the panel
-    }
+}
 
 
 
